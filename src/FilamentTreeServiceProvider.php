@@ -6,7 +6,7 @@ use Filament\PluginServiceProvider;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class FilamentTreeServiceProvider extends PluginServiceProvider
+class FilamentTreeServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -17,3 +17,4 @@ class FilamentTreeServiceProvider extends PluginServiceProvider
             ->hasViews();
     }
 }
+
